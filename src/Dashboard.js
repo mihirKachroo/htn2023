@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import { Container, List, Button, TextField } from '@mui/material';
 import mockData from './data.js';
 import ListItemComponent from './ListItem.js';
+import Dropdown from './Dropdown';
 
 function Dashboard() {
+  const options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"];
+
   const [items, setItems] = useState(mockData);
   const [newItemText, setNewItemText] = useState('');
 
@@ -28,6 +31,8 @@ function Dashboard() {
   return (
     <Container>
       <h1>Material-UI List</h1>
+      <Dropdown options={options} />
+
       <List>
         {items.map((item) => (
           <ListItemComponent
@@ -45,6 +50,7 @@ function Dashboard() {
           variant="outlined"
           value={newItemText}
           onChange={(e) => setNewItemText(e.target.value)}
+          style={{marginRight: 20}}
         />
         <Button variant="contained" color="primary" onClick={handleAdd}>
           Add
