@@ -1,8 +1,8 @@
 // src/data.js
 const mockData = [
-    { id: 1, text: 'Item 1' },
-    { id: 2, text: 'Item 2' },
-    { id: 3, text: 'Item 3' },
+    { id: 1, text: 'jwt_token' },
+    { id: 2, text: 'sql_username' },
+    { id: 3, text: 'sql_pswd' },
   ];
   
   export default mockData;

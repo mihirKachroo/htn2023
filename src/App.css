@@ -1,8 +1,8 @@
-* {
-  background-color: #f1efe7;
-}
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f1efe7;
 }
 
 .App-logo {

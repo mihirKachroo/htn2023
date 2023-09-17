@@ -5,7 +5,7 @@ import ListItemComponent from './ListItem.js';
 import Dropdown from './Dropdown';
 
 function Dashboard() {
-  const options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5"];
+  const options = ["jwt_token", "sql_username", "sql_pswd"];
 
   const [items, setItems] = useState(mockData);
   const [newItemText, setNewItemText] = useState('');
@@ -29,8 +29,8 @@ function Dashboard() {
   };
 
   return (
-    <Container>
-      <h1>Material-UI List</h1>
+    <Container style={{paddingTop: 50}}>
+      <h1>fastpass</h1>
       <Dropdown options={options} />
 
       <List>
@@ -44,7 +44,7 @@ function Dashboard() {
           />
         ))}
       </List>
-      <div>
+      <div style={{marginTop: 50, marginBottom: 50}}>
         <TextField
           label="New Item"
           variant="outlined"
